@@ -1,0 +1,33 @@
+.theme-btn-one {
+  position: relative;
+  color: #fff; /* Initial text color */
+  border-radius: 5px;
+  background: #662d91; /* Initial background color */
+  padding: 10px 34px;
+  z-index: 1;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-btn-one:hover {
+  background-color: #fff; /* Hover background color */
+  color: #662d91; /* Hover text color */
+}
+
+.theme-btn-one:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 50%;
+  bottom: 0;
+  right: 50%;
+  background: #ffffff; /* Color for the hover effect */
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.theme-btn-one:hover:after {
+  left: 0;
+  right: 0;
+}
